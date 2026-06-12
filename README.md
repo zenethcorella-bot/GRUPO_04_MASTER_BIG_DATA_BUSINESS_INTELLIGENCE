@@ -54,14 +54,14 @@ El sistema se considera reproducible si:
 
 ________________________________________
 
-README: Motor Analítico y Optimización de Portafolios (TFM)
+# README: Motor Analítico y Optimización de Portafolios (TFM)
 
 
-Descripción General (Qué muestra el código)
+# Descripción General (Qué muestra el código)
 
 El presente cuaderno de Jupyter contiene el motor analítico central desarrollado para la evaluación y optimización de carteras de inversión. El código integra la Teoría Moderna de Carteras (MPT) con técnicas de Machine Learning (Random Forest Regressor y agrupamiento K-Means). Su propósito principal es procesar cotizaciones históricas, calcular la asignación óptima de capital para maximizar el Ratio de Sharpe, auditar el riesgo sistémico (Beta) y estructurar los resultados para su posterior ingesta en herramientas de Business Intelligence (Tableau).
 
-Instrucciones de Uso (Cómo utilizar la herramienta)
+# Instrucciones de Uso (Cómo utilizar la herramienta)
 Para garantizar la correcta ejecución del entorno analítico, se deben seguir los siguientes pasos:
 
 Preparación del Entorno: Abrir el archivo .ipynb en Google Colab o en un entorno local compatible con Jupyter Notebook.
@@ -74,7 +74,7 @@ Ejecución Interactiva: Correr la celda correspondiente al "Portal de Análisis 
 
 Operativa: Seleccionar un mínimo de dos activos financieros de la lista (utilizando Ctrl/Cmd para selección múltiple), asignar un nombre personalizado a la cartera y hacer clic en el botón verde "Ejecutar Análisis Total".
 
-Resultados y Entregables (Qué esperar tras la ejecución)
+# Resultados y Entregables (Qué esperar tras la ejecución)
 Al procesar la solicitud, el sistema automatiza la extracción de datos en tiempo real (Live Fetching) y genera los siguientes resultados de forma inmediata:
 
 Auditoría Cuantitativa: Un reporte impreso en consola que detalla el Retorno Esperado, la Volatilidad, el Ratio de Sharpe maximizado, el coeficiente Beta (riesgo de mercado) y la precisión algorítmica de la IA (R² y MSE).
