@@ -94,5 +94,30 @@ Preparación para BI: Consolidación de los hallazgos en estructuras de datos ta
 
 ________________________________________
 
+README: Escalabilidad Analítica y Optimización del Universo S&P 500
 
+Descripción General
+
+El presente documento detalla el despliegue a gran escala del motor de optimización financiera. Su objetivo es aplicar la Teoría Moderna de Carteras (MPT) y los modelos de Machine Learning (K-Means y Random Forest) sobre la totalidad del índice S&P 500. La arquitectura técnica está diseñada para automatizar la ingesta de datos masivos, ejecutar cálculos probabilísticos avanzados por sector y consolidar los resultados en infraestructuras en la nube (Google Sheets y Google Drive). De este modo, la información queda estructurada y lista para su posterior explotación visual en herramientas de Business Intelligence.
+
+Instrucciones de Despliegue
+
+Para asegurar la operatividad del ecosistema y la correcta transferencia de datos, se deben seguir estos pasos:
+
+Entorno de Ejecución: Se requiere operar este cuaderno estrictamente sobre la plataforma Google Colab, ya que el código hace un uso intensivo de sus módulos de autenticación y librerías nativas.
+
+Autenticación en la Nube: Al ejecutar la primera celda, el sistema solicitará permisos de acceso. Es indispensable autorizar la conexión con la cuenta de Google correspondiente para habilitar la escritura en Sheets y el montaje de la unidad de Drive.
+
+Procesamiento Secuencial: Ejecutar las celdas en el orden establecido. El bloque analítico central descargará tres años de cotizaciones históricas para más de 500 empresas y ejecutará miles de simulaciones. Este cálculo intensivo tomará varios minutos en converger.
+
+Resultados y Entregables (Salidas del Sistema)
+Tras la ejecución completa, el código imprime resúmenes técnicos de auditoría en la consola y automatiza la exportación de las siguientes estructuras de datos:
+
+Métricas Base y Correlación: Envío directo a Google Sheets de la rentabilidad, volatilidad, coeficiente Beta y la matriz de correlación cruzada de todo el S&P 500.
+
+Portafolios Óptimos: Generación de carteras eficientes por sector y la construcción de un "Portafolio Consolidado" compuesto exclusivamente por la empresa líder de cada industria.
+
+Auditoría Predictiva: Exportación de las métricas de rendimiento (R² Score y MSE) derivadas del entrenamiento de los modelos Random Forest.
+
+Gestión de Datos Masivos (Drive): Debido a que la generación de las fronteras eficientes supera fácilmente los 100,000 registros y rompe los límites de capacidad de Google Sheets, el sistema empaqueta estas simulaciones en un archivo CSV de alto volumen (Simulaciones_MonteCarlo_Completo.csv) que se aloja de forma automática en el repositorio de Google Drive.
 
