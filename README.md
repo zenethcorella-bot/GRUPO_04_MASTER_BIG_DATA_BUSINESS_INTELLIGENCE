@@ -94,13 +94,14 @@ Preparación para BI: Consolidación de los hallazgos en estructuras de datos ta
 
 ________________________________________
 
-README: Escalabilidad Analítica y Optimización del Universo S&P 500
 
-Descripción General
+# README: Escalabilidad Analítica y Optimización del Universo S&P 500
+
+# Descripción General
 
 El presente documento detalla el despliegue a gran escala del motor de optimización financiera. Su objetivo es aplicar la Teoría Moderna de Carteras (MPT) y los modelos de Machine Learning (K-Means y Random Forest) sobre la totalidad del índice S&P 500. La arquitectura técnica está diseñada para automatizar la ingesta de datos masivos, ejecutar cálculos probabilísticos avanzados por sector y consolidar los resultados en infraestructuras en la nube (Google Sheets y Google Drive). De este modo, la información queda estructurada y lista para su posterior explotación visual en herramientas de Business Intelligence.
 
-Instrucciones de Despliegue
+# Instrucciones de Despliegue
 
 Para asegurar la operatividad del ecosistema y la correcta transferencia de datos, se deben seguir estos pasos:
 
@@ -110,7 +111,7 @@ Autenticación en la Nube: Al ejecutar la primera celda, el sistema solicitará 
 
 Procesamiento Secuencial: Ejecutar las celdas en el orden establecido. El bloque analítico central descargará tres años de cotizaciones históricas para más de 500 empresas y ejecutará miles de simulaciones. Este cálculo intensivo tomará varios minutos en converger.
 
-Resultados y Entregables (Salidas del Sistema)
+# Resultados y Entregables (Salidas del Sistema)
 Tras la ejecución completa, el código imprime resúmenes técnicos de auditoría en la consola y automatiza la exportación de las siguientes estructuras de datos:
 
 Métricas Base y Correlación: Envío directo a Google Sheets de la rentabilidad, volatilidad, coeficiente Beta y la matriz de correlación cruzada de todo el S&P 500.
