@@ -52,6 +52,11 @@ El sistema se considera reproducible si:
 
 
 
+________________________________________
+
+README: Motor Analítico y Optimización de Portafolios (TFM)
+
+
 Descripción General (Qué muestra el código)
 
 El presente cuaderno de Jupyter contiene el motor analítico central desarrollado para la evaluación y optimización de carteras de inversión. El código integra la Teoría Moderna de Carteras (MPT) con técnicas de Machine Learning (Random Forest Regressor y agrupamiento K-Means). Su propósito principal es procesar cotizaciones históricas, calcular la asignación óptima de capital para maximizar el Ratio de Sharpe, auditar el riesgo sistémico (Beta) y estructurar los resultados para su posterior ingesta en herramientas de Business Intelligence (Tableau).
@@ -85,3 +90,9 @@ Composición óptima del portafolio (pesos asignados por el algoritmo SLSQP).
 Gráfico de la Frontera Eficiente trazada a través de 3,000 simulaciones de Monte Carlo.
 
 Preparación para BI: Consolidación de los hallazgos en estructuras de datos tabulares (DataFrames) y archivos CSV estandarizados, diseñados específicamente para integrarse de forma fluida con los cuadros de mando finales en Tableau.
+
+
+________________________________________
+
+
+
